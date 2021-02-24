@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(255, 200, 100, 0.5);
+}
+
+body > header > h3 {
+  background-color: springgreen;
+}
+.my-input:hover {
+  background-color: seagreen;
+}
+.bar:focus {
+  color: red;
+  background-color: greenyellow;
+}

@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <title>Livs title</title>
+  </head>
+  <body>
+    <header height="100">My Website</header>
+    <main>
+      <table border="1px">
+        <thead>
+          <tr>
+            <th width="300">type</th>
+            <th width="500">ingredients</th>
+            <th>price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>pepperoni</td>
+            <td>cheese, pepperoni</td>
+            <td>5.99</td>
+          </tr>
+          <tr>
+            <td>veggie</td>
+            <td>cheese, mushrooms</td>
+            <td>5.99</td>
+          </tr>
+          <tr>
+            <td>meat feast</td>
+            <td>cheese, meat</td>
+            <td>6.99</td>
+          </tr>
+          <tr>
+            <td>hawaiian</td>
+            <td>cheese, ham, pineapple</td>
+            <td>8.99</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <section id="contact-form">
+        <h2>Place Your Order</h2>
+        <form method="GET" action="place-order.php">
+          <h4>Delivery</h4>
+          <input name="deliveryMethod" type="radio" value="delivery" />Delivery
+          <br />
+          <input
+            name="deliveryMethod"
+            type="radio"
+            value="collection"
+          />Collection <br />
+          <h4>Address</h4>
+          <input
+            class="lg-input"
+            name="Address1"
+            placeholder="address line 1"
+          /><br />
+          <input
+            class="lg-input"
+            name="Address2"
+            placeholder="address line 1"
+          /><br />
+          <input class="lg-input" name="city" placeholder="city" />
+          <input class="sm-input" name="zip" placeholder="postcode" /><br />
+          <input class="sm-input" name="name" placeholder="first name" />
+          <input class="lg-input" name="name" placeholder="last name" />
+          <br />
+          <br />
+          <h4>Size</h4>
+          <select name="size">
+            <option value="12">12" - £6.99</option>
+            <option value="14">14" - £9.99</option>
+            <option value="16">16" - £12.99</option>
+            <option value="18">18" - £14.99</option>
+            <option value="26">26" - £19.99</option>
+          </select>
+          <h4>Ingredients</h4>
+          <input name="ingredient" value="pepperoni" type="checkbox" />Pepperoni
+          <br />
+          <input name="ingredient" value="mushroom" type="checkbox" />Mushroom
+          <br />
+          <input name="ingredient" value="onion" type="checkbox" />Onion <br />
+          <input name="ingredient" value="pinapple" type="checkbox" />Pineapple
+          <br />
+          <input name="ingredient" value="chilli" type="checkbox" />Chilli
+          <br />
+          <input name="ingredient" value="bacon" type="checkbox" />Bacon <br />
+          <input name="ingredient" value="peppers" type="checkbox" />Peppers
+          <br />
+          <br />
+          <button type="submit">Place Order</button>
+        </form>
+      </section>
+    </main>
+    <footer>&copy; Copyright, made in 2021 yall</footer>
+  </body>
+</html>

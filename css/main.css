@@ -1,0 +1,97 @@
+.my-input,
+.my-textarea {
+  display: block;
+  width: 90%;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 1px solid #fd209a;
+  resize: none;
+}
+
+.profile-menu {
+  list-style-type: none;
+  float: right;
+  margin-top: 35px;
+  margin-right: 20px;
+}
+
+[data-trigger="dropdown"] {
+  color: black;
+  padding-bottom: 30px;
+}
+
+.submenu a {
+  color: #2f345c;
+  text-shadow: none;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 15px 10px;
+  display: block;
+  letter-spacing: 0.8px;
+}
+
+.submenu a:hover {
+  background-color: #6dd9f7;
+}
+
+#site-title {
+  display: inline-block;
+  color: #2f345c;
+}
+
+.submenu {
+  position: absolute;
+  right: 10px;
+  width: 300px;
+  height: 200px;
+  list-style: none;
+  padding: 2px;
+  border: 1px solid #fd209a;
+  background-color: #e2f7fd;
+  margin-top: 30px;
+  box-shadow: 2px 2px 15px #4cdcce;
+  display: none;
+}
+
+.submenu.active {
+  display: block;
+}
+
+/* centered everything with equal side-margins */
+section {
+  max-width: 100%;
+  width: 900px;
+  margin: auto;
+}
+
+#context {
+  display: inline-block;
+  position: absolute;
+  background: #e2f7fd;
+  box-shadow: 20px 2px 15px rgba(73, 53, 203, 0.255);
+  display: none;
+}
+
+.context-menu a {
+  color: black;
+  display: block;
+  width: 200px;
+  padding: 10px;
+  text-decoration: none;
+  text-shadow: none;
+  font-weight: 600;
+}
+
+.context-menu a:hover {
+  background-color: #6dd9f7;
+}
+
+.context-menu {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  border: 1px solid #fd209a;
+}
+.hidden {
+  display: none;
+}
