@@ -1,0 +1,117 @@
+<!-- Bootstrap classes & use -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="myCss.css" />
+    <!-- important to add your CSS after bootstrap for when you want to override styles -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- toggle button shows on min-width, its responsive -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Olivia R Walker</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="#" class="nav-link active"> Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Link</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h1>Hello Bootstrap</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <br />
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <!-- creating a block button -->
+                    <!-- turned link into button using bootstrap class -->
+                    <a class="btn btn-success btn-md btn-block" href="https://www2.gogoanime.sh/fruits-basket-2nd-season-episode-7" target="_blank">Watch Fruits Basket 2nd Season Episode 7</a>
+                </div>
+                <br />
+                <a class="btn btn-outline-primary btn-sm" href="#">Read our polices</a>
+                <br />
+            </div>
+        </div>
+        <br />
+      <div class="row">
+        <div class="col-md-4 col-lg-2 col-sm-6">
+          <h3>Sidebar</h3>
+        </div>
+        <div class="col-md-8 col-lg-10  col-sm-6">
+          <form>
+            <div class="mb3">
+              <label class="form-label" for="emailInput">Email Address</label>
+              <input
+                type="email"
+                id="emailInput"
+                aria-describedby="emailHelp"
+                placeholder="Email"
+                class="form-control"
+              />
+              <small id="emailHelp" class="form-text text-muted">This is the address of your email...</address></small>
+
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nameInput">
+                    Name
+                </label>
+                <input type="name" class="form-control" id="nameInput" placeholder="Enter name">
+            </div>
+            <label for="selectInput">
+                Type
+            </label>
+            <select aria-label="Default select example" class="form-control form-select">
+                <option selected>Website Downtime</option>
+                <option value="1">Custom Coding</option>
+                <option value="2">This Form Doesn't Work</option>
+            </select>
+            <br />
+            <label for="messageText">Message</label>
+            <textarea rows="5" placeholder="Message" id="MessageText" class="form-control"></textarea>
+            <br />
+            <div class="form-check">
+                <label for="" class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">
+                    Check this out!
+                </label>
+             </div>
+             <br />
+             <button type="button" class="btn btn-success">Send!</button>
+
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- scripts needed for functionality to work, got from cdn jquery, copy link address -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
